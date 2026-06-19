@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="icon" href="bootstrap-5.3.8-dist/img/favicons.png" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="arriba">
+        <button onclick="location.href='index.html'">Volver</button>
+        <h2 class="titulo">Contactanos</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="titulo"><h3>Contactanos</h3>
+        <p>¡Contáctanos para más información!</p></div>
+    </div>
+    <form action="formulario" class="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+    <div class="mensaje" id="mensajeConfirmacion">
+    ¡Gracias por tu mensaje! Nos pondremos en contacto pronto.
+    </div>
+    <script>
+        const formulario = document.getElementById("formulario");
+        const mensajeConfirmacion = document.getElementById("mensajeConfirmacion");
+        formulario.addEventListener("submit", function(event) {
+            event.preventDefault();
+            mensajeConfirmacion.style.display = "block"; 
+            formulario.reset(); 
+        });
+    </script>
+    <footer>
+        <p>&copy; 2024 Tienda Gammer. Todos los derechos reservados.</p>
+        <a href="contacto.html">Contáctanos</a>
+            <div class="redes">
+                <a href="---" target="_blank"><i class="fab fa-facebook"></i>Facebook</a>
+                <a href="---" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="---" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="---" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+            </div>
+</body>
+</html>
