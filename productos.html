@@ -23,7 +23,7 @@
             <p>Tipo: Mecánico compacto (sin pad numérico) <br>Iluminación: RGB dinámico con 10 modos <br> cable desmontable USB-C, diseño portátil
                 <p>Precio: $75 USD</p><p>Promoción: 10% de descuento en tu próxima compra de accesorios.</p>
                 <div class="arriba">
-                    <button onclick="location.href='comprar.html'">Agregar al carrito</button>
+                   <button onclick="agregarAlCarrito(this)" data-producto="ShadowBlade TKL">Agregar al carrito</button>
                 </div>
             </div>
         </div>
@@ -34,7 +34,7 @@
                 <p>Tipo: Mecánico compacto (sin pad numérico) <br>Iluminación: RGB dinámico con 10 modos <br> cable desmontable USB-C, diseño portátil</p>
                 <p>Precio: $75 USD</p><p>Promoción: 10% de descuento en tu próxima compra de accesorios.</p>
                 <div class="arriba">
-                    <button onclick="location.href='comprar.html'">Agregar al carrito</button>
+                   <button onclick="agregarAlCarrito(this)" data-producto="ShadowBlade TKL">Agregar al carrito</button>
                 </div>
             </div>
         </div>
@@ -47,7 +47,7 @@
                 <p>Promoción: Envío gratis y funda protectora incluida.</p>
                 <p>Precio: $129 USD</p>
                 <div class="arriba">
-                    <button onclick="location.href='comprar.html'">Agregar al carrito</button>
+                    <button onclick="agregarAlCarrito(this)" data-producto="ShadowBlade TKL">Agregar al carrito</button>
                 </div>
             </div>
         </div>
@@ -59,7 +59,7 @@
                 <p>Promoción: Envío gratis y funda protectora incluida.</p>
                 <p>Precio: $129 USD</p>
                 <div class="arriba">
-                    <button onclick="location.href='comprar.html'">Agregar al carrito</button>
+                    <button onclick="agregarAlCarrito(this)" data-producto="ShadowBlade TKL">Agregar al carrito</button>
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@
                 <p>Promoción: Incluye garantía extendida de 1 año y soporte técnico remoto gratuito.</p>
                 <p>Precio: $899 USD</p>
                 <div class="arriba">
-                    <button onclick="location.href='comprar.html'">Agregar al carrito</button>
+                    <button onclick="agregarAlCarrito(this)" data-producto="ShadowBlade TKL">Agregar al carrito</button>
                 </div>
             </div>
         </div>
@@ -84,7 +84,7 @@
                 <p>Ideal para: gamers exigentes y edición de video profesional.<br>Promoción: Incluye garantía extendida de 2 años y soporte técnico remoto gratuito.</p>
                 <p>Precio: $1,499 USD</p>
                 <div class="arriba">
-                    <button onclick="location.href='comprar.html'">Agregar al carrito</button>
+                    <button onclick="agregarAlCarrito(this)" data-producto="ShadowBlade TKL">Agregar al carrito</button>
                 </div>
             </div>
         </div>
@@ -95,7 +95,7 @@
             <p>Tipo: Mecánico compacto (sin pad numérico) <br>Iluminación: RGB dinámico con 10 modos <br> cable desmontable USB-C, diseño portátil
                 <p>Precio: $75 USD</p><p>Promoción: 10% de descuento en tu próxima compra de accesorios.</p>
                 <div class="arriba">
-                    <button onclick="location.href='comprar.html'">Agregar al carrito</button>
+                    <button onclick="agregarAlCarrito(this)" data-producto="ShadowBlade TKL">Agregar al carrito</button>
                 </div>
             </div>
         </div>
@@ -106,11 +106,16 @@
             <p>Tipo: Mecánico compacto (sin pad numérico) <br>Iluminación: RGB dinámico con 10 modos <br> cable desmontable USB-C, diseño portátil
                 <p>Precio: $75 USD</p><p>Promoción: 10% de descuento en tu próxima compra de accesorios.</p>
                 <div class="arriba">
-                    <button onclick="location.href='comprar.html'">Comprar</button>
+                    <button onclick="agregarAlCarrito(this)" data-producto="ShadowBlade TKL">Agregar al carrito</button>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        function agregarAlCarrito(boton) {
+        alert(boton.dataset.producto + " agregado al carrito");
+        }
+    </script>
     <footer>
         <p>&copy; 2024 Tienda Gammer. Todos los derechos reservados.</p> 
             <a href="contacto.html">Contáctanos</a>
