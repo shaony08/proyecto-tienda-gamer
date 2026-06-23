@@ -16,21 +16,23 @@
         <h2 class="titulo">Contactanos</h2>
         </div>
     </div>
-    <div class="titulo">
-        <p>¡Contáctanos para más información!</p>
+        <div class="titulo">
+        <p>¡Contáctanos para más información!</p></div>
+    <div class="contenedor">
+        <form id="formulario" action="formulario" class="formulario">
+            <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+            <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+        </form>
     </div>
-    <form action="formulario" class="formulario">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <label for="correo">Correo:</label>
-        <input type="email" id="correo" name="correo" required>
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" required></textarea>
-        <button type="submit">Enviar</button>
-    </form>
     <div class="mensaje" id="mensajeConfirmacion" style="display:none;">
     ¡Gracias por tu mensaje! Nos pondremos en contacto pronto.
     </div>
+    <!-- Agregar el script para mostrar el mensaje de confirmación -->
     <script>
         const formulario2 = document.getElementById("formulario");
         const mensajeConfirmacion2 = document.getElementById("mensajeConfirmacion");
