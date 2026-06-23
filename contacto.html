@@ -16,9 +16,8 @@
         <h2 class="titulo">Contactanos</h2>
         </div>
     </div>
-    <div class="container">
-        <div class="titulo"><h3>Contactanos</h3>
-        <p>¡Contáctanos para más información!</p></div>
+    <div class="titulo">
+        <p>¡Contáctanos para más información!</p>
     </div>
     <form action="formulario" class="formulario">
         <label for="nombre">Nombre:</label>
@@ -33,12 +32,12 @@
     ¡Gracias por tu mensaje! Nos pondremos en contacto pronto.
     </div>
     <script>
-        const formulario = document.getElementById("formulario");
-        const mensajeConfirmacion = document.getElementById("mensajeConfirmacion");
-        formulario.addEventListener("submit", function(event) {
+        const formulario2 = document.getElementById("formulario");
+        const mensajeConfirmacion2 = document.getElementById("mensajeConfirmacion");
+        formulario2.addEventListener("submit", function(event) {
             event.preventDefault();
-            mensajeConfirmacion.style.display = "block"; 
-            formulario.reset(); 
+            mensajeConfirmacion2.style.display = "block"; 
+            formulario2.reset(); 
         });
     </script>
     <footer>
